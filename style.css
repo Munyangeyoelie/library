@@ -1,12 +1,105 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Helvetica Neue";
+* {
+  padding: 0;
+  margin: 0;
 }
-section {
+body {
+  background: #42cca0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  min-height: 100vh;
+}
+#new-book-btn {
+  width: 200px;
+  height: 100px;
+  font-size: 70px;
+  display: absolute;
+  top: 50%;
+  left: 20%;
+  margin: 30px;
+}
+#new-book-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 400px;
+  height: 500px;
+  background: #46745d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transparent: 50% transparent;
+}
+
+#new-book-form input {
+  width: 200px;
+  height: 6vh;
+  border-radius: 10px;
+  margin: 10px;
+
+  border-bottom: 2px solid #46745d;
+  outline: none;
+}
+#new-book-form label {
+  border: none;
+  border-bottom: 2px solid #46745d;
+  outline: none;
+  font-size: 20px;
+}
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-radius: 10px;
 }
-.Box {
+.add-book {
+  width: 100px;
+  height: 6vh;
+  border-radius: 10px;
+  margin: 10px;
+  background: #ff00e4;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+#read {
+  width: 10px;
+  height: 2vh;
+  border-radius: 10px;
+  margin: 10px;
+  background: #fff;
+  font-size: 20px;
+}
+#close-btn {
+  width: 30px;
+  display: absolute;
+  top: 10%;
+  right: 10%;
+  height: 6vh;
+  border-radius: 10px;
+  margin: 10px;
+  background: #ffee6b;
+  color: white;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#close-btn:hover {
+  background: #ff0000;
+  cursor: pointer;
+}
+#library {
+  display: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
